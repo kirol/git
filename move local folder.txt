@@ -1,0 +1,1 @@
+Simply copy the entire working directory contents (including the hidden .git directory). This will move the entire working directory to the new directory and will not affect the remote repository on GitHub.
