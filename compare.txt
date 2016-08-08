@@ -1,0 +1,22 @@
+=========git: diff between file in local repo and origin===============
+
+Question
+I want to find the differences between a file I have in my local repo vs what is in the origin master.
+
+I know that there is git diff, however I just want to isolate it down to this one particular file.
+
+For simplicity lets say the files is named file1.txt and it has a local file path = [local_path] and in the origin it has filepath = [remote-path].
+
+What would be the git command I need to type?
+
+EDIT: Thank you all for your input it has been very insightful. For those that are using Eclipse (which I am and I should have stated earlier) I just found out that you can just rightclick -> Compare With -> Branch, Tag or Reference -> select appropriate version and there you go.
+
+
+
+
+Answer:
+If [remote-path] and [local-path] are the same, you can do
+
+git diff origin/master -- [local-path]
+
+Actually, here is a better example: git diff origin/master -- README.md
