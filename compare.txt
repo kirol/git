@@ -20,3 +20,9 @@ If [remote-path] and [local-path] are the same, you can do
 git diff origin/master -- [local-path]
 
 Actually, here is a better example: git diff origin/master -- README.md
+
+
+
+================Show modified files in working directory after using git add * command====================
+
+git status
