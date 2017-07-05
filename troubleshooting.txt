@@ -1,0 +1,12 @@
+443 error.
+
+To fix this error, you need to look for gitconfig file then add below texts:
+
+[http]
+	proxy = http://donkey.cybersoft.vn:8080
+	sslVerify = false
+    sslCAinfo = /bin/curl-ca-bundle.crt
+[https]
+	proxy = https://donkey.cybersoft.vn:8080
+	sslVerify = false
+    sslCAinfo = /bin/curl-ca-bundle.crt
